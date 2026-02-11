@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Travel Recommendation Website</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="travel_recommendation.js" defer></script>
+
+    <style>
+        body {
+            background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('https://iso.500px.com/wp-content/uploads/2014/07/big-one.jpg');
+            background-size: cover;
+            background-attachment: fixed;
+            background-position: center;
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: white;
+        }
+
+        /* Bold Navigation Bar */
+        nav {
+            display: flex;
+            align-items: center;
+            padding: 20px 50px;
+            background: rgba(0, 0, 0, 0.7);
+            backdrop-filter: blur(10px);
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.1rem;
+            margin-right: 30px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #00d4ff;
+        }
+
+        /* Bold Intro Layout */
+        #intro {
+            max-width: 600px;
+            margin: 100px 50px;
+            padding: 40px;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(15px);
+            border-radius: 15px;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        #intro h1 {
+            font-size: 3.5rem;
+            line-height: 1.1;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+        }
+
+        #intro p {
+            font-size: 1.2rem;
+            line-height: 1.6;
+            opacity: 0.9;
+        }
+
+        /* Search Area Styling */
+        #search-container {
+            margin-left: auto;
+            display: flex;
+            gap: 10px;
+        }
+
+        input[type="text"] {
+            padding: 10px;
+            border-radius: 5px;
+            border: none;
+            width: 250px;
+        }
+
+        button {
+            padding: 10px 20px;
+            border-radius: 5px;
+            border: none;
+            cursor: pointer;
+            font-weight: bold;
+            background: #00d4ff;
+            color: white;
+        }
+
+        #resetBtn {
+            background: #ff4b2b;
+        }
+
+        /* Social Icons */
+        #socials {
+            position: fixed;
+            left: 50px;
+            bottom: 50px;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            font-size: 1.5rem;
+        }
+    </style>
+</head>
+
+<body>
+
+<nav>
+    <a href="travel_recommendation.html">Home</a>
+    <a href="about.html">About Us</a>
+    <a href="contact.html">Contact Us</a>
+
+    <div id="search-container">
+        <input type="text" id="searchInput" placeholder="Search destinations...">
+        <button id="searchBtn">Search</button>
+        <button id="resetBtn">Reset</button>
+    </div>
+</nav>
+
+<div id="intro">
+    <h1>EXPLORE<br>THE WORLD.</h1>
+    <p>
+        Bingdom is your personal doorway to discovery. 
+        Uncover destinations that match your mood and spark your imagination.
+    </p>
+    <p>Your journey starts here.</p>
+    <button style="margin-top:20px; padding: 15px 30px; font-size: 1rem;">Book Now</button>
+</div>
+
+<div id="socials">
+    <a href="#" title="Facebook">📘</a>
+    <a href="#" title="Instagram">📸</a>
+    <a href="#" title="Twitter">🐦</a>
+    <a href="#" title="TikTok">🎵</a>
+</div>
+
+<div id="results"></div>
+
+</body>
+</html>
+
